@@ -1,144 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MittiDost</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MittiDost</title>
 
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4fff4;
-      color: #333;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f6fff6;
+  color: #333;
+}
 
-    header {
-      background: linear-gradient(135deg, #2e7d32, #66bb6a);
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
+/* HERO */
+header {
+  background: linear-gradient(135deg, #1b5e20, #66bb6a);
+  color: white;
+  padding: 80px 20px 60px;
+  text-align: center;
+  position: relative;
+}
 
-    header img {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-    }
+header img {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  width: 65px;
+}
 
-    h1 {
-      margin: 10px 0;
-      font-size: 32px;
-    }
+h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
 
-    p {
-      font-size: 16px;
-    }
+.hero-sub {
+  font-size: 18px;
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.6;
+}
 
-    .btn {
-      display: inline-block;
-      padding: 12px 24px;
-      background: white;
-      color: #2e7d32;
-      text-decoration: none;
-      border-radius: 25px;
-      font-weight: bold;
-      margin-top: 15px;
-    }
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 32px;
+  background: white;
+  color: #1b5e20;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
 
-    section {
-      background: white;
-      margin: 30px auto;
-      padding: 30px;
-      max-width: 900px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
+.btn:hover {
+  background: #e8f5e9;
+}
 
-    h2 {
-      color: #2e7d32;
-    }
+.stat {
+  margin-top: 15px;
+  font-weight: bold;
+}
 
-    ul {
-      padding-left: 20px;
-    }
+/* SECTION CARDS */
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #e8f5e9;
-      font-weight: bold;
-    }
-  </style>
+.card {
+  background: white;
+  margin: 30px 20px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  color: #2e7d32;
+}
+
+ul {
+  padding-left: 20px;
+  line-height: 1.7;
+}
+
+/* GRID STYLE */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.grid div {
+  background: #f1fff1;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #e8f5e9;
+  font-size: 14px;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <!-- LOGO -->
-  <img src="logo.png" width="70">
+  <img src="logo.png">
 
-  <h1>Building the Last-Mile Infrastructure for Indian Farmers</h1>
-  <p>MittiDost delivers free soil testing through village-level networks, improving crop yield and farmer income.</p>
-  <a href="#" class="btn">Join Pilot</a>
+  <h1>Empowering Farmers with Scientific Soil Intelligence</h1>
+
+  <p class="hero-sub">
+    MittiDost is building a trusted village-level network to deliver free soil testing,
+    improve crop productivity, and bridge the last-mile gap in agricultural services.
+  </p>
+
+  <a href="mailto:mittidost@gmail.com" class="btn">Join Pilot</a>
+
+  <div class="stat">🌾 Targeting 14+ Crore Farmers Across India</div>
 </header>
 
-<section>
+<div class="container">
+
+<div class="card">
   <h2>🌱 The Problem</h2>
   <p>
-    Rural farmers lack access to soil testing due to distance, low awareness, and cost.
-    This leads to incorrect fertilizer use and lower crop productivity.
+    Rural farmers lack access to soil testing due to distance, low awareness, and cost barriers.
+    This results in incorrect fertilizer use, reduced crop yield, and income loss.
   </p>
-</section>
+</div>
 
-<section>
+<div class="card">
   <h2>🚀 Our Solution</h2>
   <p>
-    MittiDost provides free soil testing through trained rural youth (MittiMitras),
-    ensuring last-mile delivery of agriculture services and government schemes.
+    MittiDost deploys trained rural youth (MittiMitras) to collect soil samples,
+    facilitate government testing, and deliver simple, actionable soil insights to farmers.
   </p>
-</section>
+</div>
 
-<section>
+<div class="card">
   <h2>⚙️ How It Works</h2>
-  <ul>
-    <li>Farmer connects with MittiMitra</li>
-    <li>Soil sample collected from farm</li>
-    <li>Sample tested in government lab</li>
-    <li>Report and guidance delivered</li>
-  </ul>
-</section>
+  <div class="grid">
+    <div>📍 Connect with MittiMitra</div>
+    <div>🧪 Soil sample collected</div>
+    <div>🏢 Tested in govt lab</div>
+    <div>📄 Report + guidance delivered</div>
+  </div>
+</div>
 
-<section>
+<div class="card">
   <h2>💡 Why MittiDost</h2>
   <ul>
-    <li>Village-level trusted network</li>
+    <li>Trusted village-level human network</li>
     <li>Free for farmers via government support</li>
-    <li>Improves crop yield and farmer income</li>
-    <li>Bridges gap between farmers and schemes</li>
+    <li>Improves yield and reduces input cost</li>
+    <li>Bridges farmers with schemes</li>
   </ul>
-</section>
+</div>
 
-<section>
+<div class="card">
   <h2>📊 Why Now?</h2>
   <p>
-    Government is actively promoting soil health programs, but last-mile delivery is missing.
-    MittiDost bridges this gap with a scalable rural network.
+    Government is actively promoting soil health programs, but last-mile delivery remains weak.
+    MittiDost solves this gap with a scalable rural execution network.
   </p>
-</section>
+</div>
 
-<section>
+<div class="card">
   <h2>📩 Join Our Pilot</h2>
   <p>
-    We are launching our pilot in Begusarai, Bihar.  
-    Contact us to collaborate or participate.
+    Pilot launching in Begusarai, Bihar within 30 days.  
+    We are looking for partners, supporters, and early adopters.
   </p>
-  <p>Email: mittidost@gmail.com</p>
-</section>
+  <p><strong>Email:</strong> mittidost@gmail.com</p>
+</div>
+
+</div>
 
 <footer>
-  🚀 Pilot launching in Begusarai within 30 days
+  Built by a farmer’s son from Begusarai, Bihar 🌱
 </footer>
 
 </body>
