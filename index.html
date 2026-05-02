@@ -8,11 +8,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #f4fff4;
+  background: linear-gradient(180deg, #f4fff4, #e8f5e9);
   color: #222;
 }
 
@@ -36,6 +35,7 @@ body {
 
 .logo span {
   font-weight: 600;
+  font-size: 18px;
 }
 
 /* HERO */
@@ -43,12 +43,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px;
+  padding: 70px 60px;
   flex-wrap: wrap;
 }
 
 .hero-left {
-  max-width: 520px;
+  max-width: 550px;
 }
 
 .hero h1 {
@@ -64,13 +64,13 @@ body {
 .btn {
   margin-top: 20px;
   display: inline-block;
-  padding: 14px 30px;
+  padding: 14px 32px;
   border-radius: 30px;
   background: linear-gradient(135deg, #1b5e20, #43a047);
   color: white;
   text-decoration: none;
   font-weight: 600;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
   transition: 0.3s;
 }
 
@@ -88,9 +88,10 @@ body {
 
 .hero-card div {
   margin: 10px 0;
+  font-weight: 500;
 }
 
-/* STATS BAR */
+/* STATS */
 .stats {
   display: flex;
   justify-content: space-around;
@@ -117,8 +118,14 @@ body {
 }
 
 .section h2 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-size: 30px;
+  color: #2e7d32;
+}
+
+.section p {
+  line-height: 1.7;
+  color: #444;
 }
 
 /* GRID */
@@ -140,20 +147,12 @@ body {
   transform: translateY(-6px);
 }
 
-/* DIVIDER */
-.divider {
-  height: 1px;
-  background: #ddd;
-  margin: 40px 0;
-}
-
 /* FOOTER */
 footer {
   text-align: center;
   padding: 30px;
   background: #dcedc8;
 }
-
 </style>
 </head>
 
@@ -173,18 +172,21 @@ footer {
   <div class="hero-left">
     <h1>Empowering Farmers with Scientific Soil Intelligence</h1>
     <p>
-      MittiDost builds a village-level network to deliver free soil testing,
-      improve crop productivity, and bridge the last-mile gap in agriculture.
+      MittiDost is building a village-level network to deliver free soil testing,
+      improve crop productivity, and bridge the last-mile gap in agriculture services across rural India.
     </p>
 
     <a href="mailto:mittidost@gmail.com" class="btn">Join Pilot</a>
+
+    <p style="margin-top:10px;">🚀 Pilot launching in Begusarai, Bihar</p>
+    <p>🌾 Targeting 14+ crore farmers across India</p>
   </div>
 
   <div class="hero-card">
-    <div>🌾 14+ Crore Farmers Target</div>
-    <div>🚀 Pilot launching in Bihar</div>
-    <div>🤝 Govt-backed ecosystem</div>
-    <div>📈 Scalable nationwide model</div>
+    <div>🌾 14+ Crore Farmers</div>
+    <div>🚀 Pilot Launch in Bihar</div>
+    <div>🤝 Govt-backed opportunity</div>
+    <div>📈 Scalable nationwide</div>
   </div>
 
 </div>
@@ -196,76 +198,94 @@ footer {
     <p>Farmers in India</p>
   </div>
   <div class="stat-box">
-    <h3>90%</h3>
+    <h3>90%+</h3>
     <p>Villages underserved</p>
   </div>
   <div class="stat-box">
     <h3>30KM+</h3>
-    <p>Distance to labs</p>
+    <p>Avg distance to labs</p>
   </div>
 </div>
 
 <!-- PROBLEM -->
 <div class="section">
   <h2>🌱 The Problem</h2>
-  <div class="grid">
-    <div class="card">Farmers lack access to soil testing facilities</div>
-    <div class="card">Incorrect fertilizer use reduces yield</div>
-    <div class="card">Low awareness of government schemes</div>
-    <div class="card">No trusted last-mile service network</div>
-  </div>
+  <p>
+    Millions of farmers in India still rely on guesswork for fertilizer usage due to lack of access to soil testing facilities.
+    Government schemes exist, but fail at last-mile delivery — leaving farmers underserved and facing reduced yields.
+  </p>
 </div>
-
-<div class="divider"></div>
 
 <!-- SOLUTION -->
 <div class="section">
   <h2>🚀 Our Solution</h2>
-  <div class="grid">
-    <div class="card">Village-level MittiMitras</div>
-    <div class="card">Free soil testing via govt labs</div>
-    <div class="card">Simple advisory for farmers</div>
-    <div class="card">Employment for rural youth</div>
-  </div>
+  <p>
+    MittiDost builds a decentralized network of trained rural youth (MittiMitras) who collect soil samples,
+    facilitate testing through government labs, and deliver actionable insights directly to farmers at zero cost.
+  </p>
 </div>
-
-<div class="divider"></div>
 
 <!-- HOW -->
 <div class="section">
   <h2>⚙️ How It Works</h2>
   <div class="grid">
     <div class="card">📍 Connect with MittiMitra</div>
-    <div class="card">🧪 Sample collection</div>
+    <div class="card">🧪 Soil sample collection</div>
     <div class="card">🏢 Lab testing</div>
-    <div class="card">📄 Report delivery</div>
+    <div class="card">📄 Report + guidance</div>
   </div>
 </div>
-
-<div class="divider"></div>
 
 <!-- WHY -->
 <div class="section">
   <h2>💡 Why MittiDost</h2>
   <div class="grid">
-    <div class="card">Local trust-based model</div>
-    <div class="card">Zero cost for farmers</div>
+    <div class="card">Trusted village network</div>
+    <div class="card">Zero cost model</div>
     <div class="card">Improves yield & income</div>
-    <div class="card">Scalable across India</div>
+    <div class="card">Enables govt schemes</div>
   </div>
 </div>
 
-<div class="divider"></div>
+<!-- MARKET -->
+<div class="section">
+  <h2>📊 Market Opportunity</h2>
+  <p>
+    India has over 14 crore farmers, with more than 85% being small and marginal.
+    Over 90% of villages lack soil testing access, creating a massive scalable opportunity.
+  </p>
+</div>
+
+<!-- WHY NOW -->
+<div class="section">
+  <h2>📊 Why Now</h2>
+  <p>
+    Government is actively promoting soil health programs, but execution remains weak.
+    This creates the perfect opportunity for MittiDost to build the last-mile network.
+  </p>
+</div>
+
+<!-- IMPACT -->
+<div class="section">
+  <h2>🌍 Our Impact Vision</h2>
+  <p>
+    Improve farmer income, increase productivity, reduce input waste, and create rural employment at scale.
+  </p>
+</div>
 
 <!-- CTA -->
 <div class="section">
   <h2>📩 Join Our Pilot</h2>
-  <p>Launching in Begusarai, Bihar. Be part of the change.</p>
+  <p>
+    We are launching in Begusarai, Bihar within 30 days.  
+    Join us in building a movement for smarter farming.
+  </p>
+
   <a href="mailto:mittidost@gmail.com" class="btn">Contact Us</a>
 </div>
 
 <footer>
-  Built by a farmer’s son from Begusarai 🌱
+  Built by a farmer’s son from Begusarai, Bihar 🌱
 </footer>
 
 </body>
