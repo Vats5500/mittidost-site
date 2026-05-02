@@ -4,42 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MittiDost</title>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f9fff9;
+      background: #f4fff4;
       color: #333;
     }
+
     header {
-      background: #2e7d32;
+      background: linear-gradient(135deg, #2e7d32, #66bb6a);
       color: white;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
     }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
+
+    header img {
+      position: absolute;
+      top: 20px;
+      left: 20px;
     }
+
+    h1 {
+      margin: 10px 0;
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: white;
+      color: #2e7d32;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    section {
+      background: white;
+      margin: 30px auto;
+      padding: 30px;
+      max-width: 900px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
     h2 {
       color: #2e7d32;
     }
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background: #2e7d32;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
+
+    ul {
+      padding-left: 20px;
     }
+
     footer {
-      background: #eee;
       text-align: center;
       padding: 20px;
-      font-size: 14px;
+      background: #e8f5e9;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -47,23 +76,27 @@
 <body>
 
 <header>
-  <h1>MittiDost</h1>
-  <p>Har Khet Ki Mitti, Har Kisan Ki Jeet</p>
+  <!-- LOGO -->
+  <img src="logo.png" width="70">
+
+  <h1>Building the Last-Mile Infrastructure for Indian Farmers</h1>
+  <p>MittiDost delivers free soil testing through village-level networks, improving crop yield and farmer income.</p>
+  <a href="#" class="btn">Join Pilot</a>
 </header>
 
 <section>
   <h2>🌱 The Problem</h2>
   <p>
     Rural farmers lack access to soil testing due to distance, low awareness, and cost.
-    This leads to poor fertilizer use and low crop productivity.
+    This leads to incorrect fertilizer use and lower crop productivity.
   </p>
 </section>
 
 <section>
   <h2>🚀 Our Solution</h2>
   <p>
-    MittiDost provides free soil testing through village-level youth (MittiMitras),
-    ensuring last-mile delivery of agriculture services and schemes.
+    MittiDost provides free soil testing through trained rural youth (MittiMitras),
+    ensuring last-mile delivery of agriculture services and government schemes.
   </p>
 </section>
 
@@ -71,9 +104,9 @@
   <h2>⚙️ How It Works</h2>
   <ul>
     <li>Farmer connects with MittiMitra</li>
-    <li>Soil sample collected</li>
-    <li>Sent to lab</li>
-    <li>Report + guidance delivered</li>
+    <li>Soil sample collected from farm</li>
+    <li>Sample tested in government lab</li>
+    <li>Report and guidance delivered</li>
   </ul>
 </section>
 
@@ -81,10 +114,18 @@
   <h2>💡 Why MittiDost</h2>
   <ul>
     <li>Village-level trusted network</li>
-    <li>Free for farmers</li>
-    <li>Improves yield & income</li>
-    <li>Bridges gap with government schemes</li>
+    <li>Free for farmers via government support</li>
+    <li>Improves crop yield and farmer income</li>
+    <li>Bridges gap between farmers and schemes</li>
   </ul>
+</section>
+
+<section>
+  <h2>📊 Why Now?</h2>
+  <p>
+    Government is actively promoting soil health programs, but last-mile delivery is missing.
+    MittiDost bridges this gap with a scalable rural network.
+  </p>
 </section>
 
 <section>
@@ -97,7 +138,7 @@
 </section>
 
 <footer>
-  Pilot launching in Begusarai within 30 days 🚀
+  🚀 Pilot launching in Begusarai within 30 days
 </footer>
 
 </body>
