@@ -12,11 +12,11 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(180deg, #f4fff4, #e8f5e9);
-  color: #1b1b1b;
+  background: #f4fff4;
+  color: #222;
 }
 
-/* NAVBAR */
+/* NAV */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -24,20 +24,25 @@ body {
   padding: 20px 60px;
 }
 
-.nav img {
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
   width: 55px;
 }
 
-.nav span {
+.logo span {
   font-weight: 600;
-  font-size: 18px;
 }
 
 /* HERO */
 .hero {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 60px;
   flex-wrap: wrap;
 }
@@ -47,64 +52,79 @@ body {
 }
 
 .hero h1 {
-  font-size: 42px;
-  line-height: 1.2;
-  margin-bottom: 20px;
+  font-size: 44px;
+  margin-bottom: 15px;
 }
 
 .hero p {
   font-size: 18px;
   color: #555;
-  margin-bottom: 25px;
 }
 
 .btn {
-  background: linear-gradient(135deg, #1b5e20, #4caf50);
-  color: white;
+  margin-top: 20px;
+  display: inline-block;
   padding: 14px 30px;
   border-radius: 30px;
+  background: linear-gradient(135deg, #1b5e20, #43a047);
+  color: white;
   text-decoration: none;
   font-weight: 600;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   transition: 0.3s;
 }
 
 .btn:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
-/* HERO IMAGE BOX */
-.hero-box {
-  background: rgba(255,255,255,0.4);
-  backdrop-filter: blur(10px);
+/* HERO CARD */
+.hero-card {
+  background: white;
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  margin-top: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
 }
 
-.hero-box p {
+.hero-card div {
+  margin: 10px 0;
+}
+
+/* STATS BAR */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  background: #e8f5e9;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  text-align: center;
+  margin: 10px;
+}
+
+.stat-box h3 {
   margin: 0;
-  font-weight: 600;
+  color: #2e7d32;
 }
 
 /* SECTION */
 .section {
   padding: 60px 40px;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
 }
 
 .section h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #2e7d32;
+  margin-bottom: 30px;
+  font-size: 30px;
 }
 
-/* CARDS */
-.cards {
+/* GRID */
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
   gap: 20px;
 }
 
@@ -117,7 +137,14 @@ body {
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+}
+
+/* DIVIDER */
+.divider {
+  height: 1px;
+  background: #ddd;
+  margin: 40px 0;
 }
 
 /* FOOTER */
@@ -125,7 +152,6 @@ footer {
   text-align: center;
   padding: 30px;
   background: #dcedc8;
-  font-weight: 500;
 }
 
 </style>
@@ -135,7 +161,7 @@ footer {
 
 <!-- NAV -->
 <div class="nav">
-  <div style="display:flex;align-items:center;gap:10px;">
+  <div class="logo">
     <img src="logo.png">
     <span>MittiDost</span>
   </div>
@@ -143,70 +169,98 @@ footer {
 
 <!-- HERO -->
 <div class="hero">
-  
+
   <div class="hero-left">
     <h1>Empowering Farmers with Scientific Soil Intelligence</h1>
     <p>
       MittiDost builds a village-level network to deliver free soil testing,
-      improve crop yield, and bridge the last-mile gap in agriculture services.
+      improve crop productivity, and bridge the last-mile gap in agriculture.
     </p>
+
     <a href="mailto:mittidost@gmail.com" class="btn">Join Pilot</a>
   </div>
 
-  <div class="hero-box">
-    <p>🌾 Targeting 14+ Crore Farmers</p>
-    <p>🚀 Pilot launching in Bihar</p>
-    <p>🤝 Government-backed opportunity</p>
+  <div class="hero-card">
+    <div>🌾 14+ Crore Farmers Target</div>
+    <div>🚀 Pilot launching in Bihar</div>
+    <div>🤝 Govt-backed ecosystem</div>
+    <div>📈 Scalable nationwide model</div>
   </div>
 
+</div>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat-box">
+    <h3>260M+</h3>
+    <p>Farmers in India</p>
+  </div>
+  <div class="stat-box">
+    <h3>90%</h3>
+    <p>Villages underserved</p>
+  </div>
+  <div class="stat-box">
+    <h3>30KM+</h3>
+    <p>Distance to labs</p>
+  </div>
 </div>
 
 <!-- PROBLEM -->
 <div class="section">
   <h2>🌱 The Problem</h2>
-  <div class="cards">
+  <div class="grid">
     <div class="card">Farmers lack access to soil testing facilities</div>
-    <div class="card">Incorrect fertilizer usage reduces yield</div>
-    <div class="card">Government schemes fail at last-mile delivery</div>
+    <div class="card">Incorrect fertilizer use reduces yield</div>
+    <div class="card">Low awareness of government schemes</div>
+    <div class="card">No trusted last-mile service network</div>
   </div>
 </div>
+
+<div class="divider"></div>
 
 <!-- SOLUTION -->
 <div class="section">
   <h2>🚀 Our Solution</h2>
-  <div class="cards">
+  <div class="grid">
     <div class="card">Village-level MittiMitras</div>
-    <div class="card">Free soil testing via government labs</div>
-    <div class="card">Simple advisory in local language</div>
+    <div class="card">Free soil testing via govt labs</div>
+    <div class="card">Simple advisory for farmers</div>
+    <div class="card">Employment for rural youth</div>
   </div>
 </div>
 
-<!-- HOW IT WORKS -->
+<div class="divider"></div>
+
+<!-- HOW -->
 <div class="section">
   <h2>⚙️ How It Works</h2>
-  <div class="cards">
+  <div class="grid">
     <div class="card">📍 Connect with MittiMitra</div>
-    <div class="card">🧪 Soil sample collected</div>
+    <div class="card">🧪 Sample collection</div>
     <div class="card">🏢 Lab testing</div>
-    <div class="card">📄 Report & guidance</div>
+    <div class="card">📄 Report delivery</div>
   </div>
 </div>
+
+<div class="divider"></div>
 
 <!-- WHY -->
 <div class="section">
   <h2>💡 Why MittiDost</h2>
-  <div class="cards">
-    <div class="card">Trusted local network</div>
+  <div class="grid">
+    <div class="card">Local trust-based model</div>
     <div class="card">Zero cost for farmers</div>
-    <div class="card">Improves income & yield</div>
+    <div class="card">Improves yield & income</div>
     <div class="card">Scalable across India</div>
   </div>
 </div>
 
+<div class="divider"></div>
+
 <!-- CTA -->
 <div class="section">
   <h2>📩 Join Our Pilot</h2>
-  <p>We are launching in Begusarai, Bihar. Partner or participate with us.</p>
+  <p>Launching in Begusarai, Bihar. Be part of the change.</p>
   <a href="mailto:mittidost@gmail.com" class="btn">Contact Us</a>
 </div>
 
